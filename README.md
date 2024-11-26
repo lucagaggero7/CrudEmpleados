@@ -1,6 +1,6 @@
 # Aplicación WebForms en .NET Framework
 
-Esta es una aplicación desarrollada en **ASP.NET WebForms** con una base de datos **SQL Server**. La base de datos puede estar hospedada en un servidor remoto o en una instancia local de SQL Server.
+Esta es una aplicación desarrollada en **ASP.NET WebForms** con una base de datos **SQL Server**. La base de datos esta hospedada en un servidor remoto.
 
 ---
 
