@@ -45,13 +45,14 @@ Si prefieres utilizar una base de datos local, sigue estos pasos para configurar
 #### Pasos para configurar la base de datos local:
 
 1. **Clona o descarga** este repositorio en tu equipo.
-2. **Abre el archivo de solución (`.sln`)** en Visual Studio.
-3. **Ubica el archivo `script.sql`**:
+2. **Ubica el archivo `script.sql`**:
    - Este archivo se encuentra en la carpeta `BD Script` dentro de la solución y contiene las instrucciones para crear la base de datos y las tablas necesarias.
    
-4. **Ejecuta el script en SQL Server**:
+3. **Ejecuta el script en SQL Server**:
    - Abre **SQL Server Management Studio (SSMS)** o cualquier otra herramienta para gestionar bases de datos.
    - Conéctate a tu instancia local de SQL Server y ejecuta el archivo `script.sql`.
+  
+4. **Abre el archivo de solución (`.sln`)** en Visual Studio.
 
 5. **Restaurar los paquetes NuGet**:
    - Al igual que en la opción anterior, asegúrate de restaurar los paquetes NuGet:
