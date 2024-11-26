@@ -1,10 +1,10 @@
 # Aplicación WebForms en .NET Framework
 
-Esta es una aplicación desarrollada en **ASP.NET WebForms** con una base de datos **SQL Server** lista para ser utilizada. La base de datos está hosteada en un servidor remoto y contiene datos precargados para su funcionamiento inmediato. También se incluye un script SQL para la creación de la base de datos en caso de que desees utilizar una base de datos local.
+Esta es una aplicación desarrollada en **ASP.NET WebForms** con una base de datos **SQL Server**. La base de datos puede estar hospedada en un servidor remoto o en una instancia local de SQL Server.
 
 ---
 
-## Requisitos previos
+## **Requisitos previos**
 
 Antes de ejecutar la aplicación, asegúrate de contar con lo siguiente instalado en tu sistema:
 
@@ -14,37 +14,56 @@ Antes de ejecutar la aplicación, asegúrate de contar con lo siguiente instalad
 
 ---
 
-## Configuración y ejecución
+## **Configuración y ejecución**
 
-### 1. Usar la base de datos remota (configuración predeterminada)
+### **1. Usar la base de datos remota (configuración predeterminada)**
 
-La aplicación está configurada para conectarse a una base de datos SQL Server hosteada en un servidor remoto. Esta configuración te permite ejecutar la aplicación sin cambios adicionales.  
+Si deseas utilizar la base de datos remota, la aplicación ya está configurada para conectarse automáticamente a un servidor remoto de SQL Server. Solo necesitas seguir estos pasos:
 
-Pasos para ejecutar:  
-1. Clona o descarga este repositorio.  
-2. Abre el archivo de solución (`.sln`) en Visual Studio.  
-3. Asegúrate de que el proyecto WebForms está configurado como el **proyecto de inicio**:
-   - Haz clic derecho en el proyecto WebForms dentro del **Explorador de soluciones** y selecciona `Establecer como proyecto de inicio`.  
-4. Compila y ejecuta la aplicación desde Visual Studio.  
+#### Pasos para ejecutar:
+
+1. **Clona o descarga** este repositorio en tu equipo.
+2. **Abre el archivo de solución (`.sln`)** en Visual Studio.
+3. **Restaurar los paquetes NuGet**:
+   - Haz clic derecho sobre el proyecto en el **Explorador de Soluciones** y selecciona **Restaurar paquetes NuGet**.
+   - O abre la consola de NuGet y ejecuta el siguiente comando:
+     ```bash
+     Update-Package -Reinstall
+     ```
+4. **Configura el proyecto como el proyecto de inicio**:
+   - Haz clic derecho sobre el proyecto WebForms en el **Explorador de soluciones** y selecciona `Establecer como proyecto de inicio`.
+5. **Compila y ejecuta la aplicación** desde Visual Studio.
 
 > **Nota:** Asegúrate de que tu máquina tenga acceso a Internet para conectarse al servidor remoto.
 
 ---
 
-### 2. Usar una base de datos local
+### **2. Usar una base de datos local**
 
-Si prefieres utilizar tu propia instancia de SQL Server local, sigue estos pasos:
+Si prefieres utilizar una base de datos local, sigue estos pasos para configurar una instancia de SQL Server local:
 
-1. Ve a la carpeta `BD Script` dentro de la solución y localiza el archivo `script.sql`.  
-   Este archivo contiene las instrucciones para:
-   - Crear la base de datos.
-   - Crear las tablas necesarias.
+#### Pasos para configurar la base de datos local:
 
-2. Abre **SQL Server Management Studio (SSMS)** o cualquier otra herramienta para gestionar bases de datos, y ejecuta el archivo `script.sql` en tu instancia de SQL Server local.  
+1. **Clona o descarga** este repositorio en tu equipo.
+2. **Abre el archivo de solución (`.sln`)** en Visual Studio.
+3. **Ubica el archivo `script.sql`**:
+   - Este archivo se encuentra en la carpeta `BD Script` dentro de la solución y contiene las instrucciones para crear la base de datos y las tablas necesarias.
+   
+4. **Ejecuta el script en SQL Server**:
+   - Abre **SQL Server Management Studio (SSMS)** o cualquier otra herramienta para gestionar bases de datos.
+   - Conéctate a tu instancia local de SQL Server y ejecuta el archivo `script.sql`.
 
-3. Una vez creada la base de datos, actualiza la cadena de conexión en el archivo `web.config` de la aplicación:  
+5. **Restaurar los paquetes NuGet**:
+   - Al igual que en la opción anterior, asegúrate de restaurar los paquetes NuGet:
+     - Haz clic derecho sobre el proyecto en el **Explorador de Soluciones** y selecciona **Restaurar paquetes NuGet**.
+     - O abre la consola de NuGet y ejecuta el siguiente comando:
+       ```bash
+       Update-Package -Reinstall
+       ```
 
-   Busca el siguiente bloque en `web.config`:  
+6. **Actualizar la cadena de conexión**:
+   - Después de crear la base de datos local, abre el archivo `web.config` en tu proyecto.
+   - Localiza el siguiente bloque y actualiza la cadena de conexión con los valores de tu servidor y base de datos local:
 
    ```xml
    <connectionStrings>
