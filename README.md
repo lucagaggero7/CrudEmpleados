@@ -25,8 +25,8 @@ Si deseas utilizar la base de datos remota, la aplicación ya está configurada 
 1. **Clona o descarga** este repositorio en tu equipo.
 2. **Abre el archivo de solución (`.sln`)** en Visual Studio.
 3. **Restaurar los paquetes NuGet**:
-   - Haz clic derecho sobre el proyecto en el **Explorador de Soluciones** y selecciona **Restaurar paquetes NuGet**.
-   - O abre la consola de NuGet y ejecuta el siguiente comando:
+   - Abre la consola del administrador de paquetes NuGet y selecciona el boton **Restaurar**.
+   - O ejecuta el siguiente comando:
      ```bash
      Update-Package -Reinstall
      ```
@@ -55,11 +55,11 @@ Si prefieres utilizar una base de datos local, sigue estos pasos para configurar
 
 5. **Restaurar los paquetes NuGet**:
    - Al igual que en la opción anterior, asegúrate de restaurar los paquetes NuGet:
-     - Haz clic derecho sobre el proyecto en el **Explorador de Soluciones** y selecciona **Restaurar paquetes NuGet**.
-     - O abre la consola de NuGet y ejecuta el siguiente comando:
-       ```bash
-       Update-Package -Reinstall
-       ```
+   - Abre la consola del administrador de paquetes NuGet y selecciona el boton **Restaurar**.
+   - O ejecuta el siguiente comando:
+     ```bash
+     Update-Package -Reinstall
+     ```
 
 6. **Actualizar la cadena de conexión**:
    - Después de crear la base de datos local, abre el archivo `web.config` en tu proyecto.
