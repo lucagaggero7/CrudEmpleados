@@ -35,7 +35,7 @@ Pasos para ejecutar:
 
 Si prefieres utilizar tu propia instancia de SQL Server local, sigue estos pasos:
 
-1. Ve a la carpeta `Scripts` dentro de la solución y localiza el archivo `script.sql`.  
+1. Ve a la carpeta `BD Script` dentro de la solución y localiza el archivo `script.sql`.  
    Este archivo contiene las instrucciones para:
    - Crear la base de datos.
    - Crear las tablas necesarias.
