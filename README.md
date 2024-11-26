@@ -27,7 +27,7 @@ Pasos para ejecutar:
    - Haz clic derecho en el proyecto WebForms dentro del **Explorador de soluciones** y selecciona `Establecer como proyecto de inicio`.  
 4. Compila y ejecuta la aplicación desde Visual Studio.  
 
-> **Nota:** Asegúrate de que tu máquina tenga acceso a Internet para conectarse al servidor remoto. Si encuentras problemas, revisa tu conexión o verifica el acceso al servidor de base de datos remoto.
+> **Nota:** Asegúrate de que tu máquina tenga acceso a Internet para conectarse al servidor remoto.
 
 ---
 
